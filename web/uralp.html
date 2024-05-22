@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Űrlap - Stardew Valley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nystyles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="uralp.html" id="aktiv">Űrlap</a></li>
+                <li><a href="tavasz.html">Tavasz</a></li>
+                <li><a href="nyar.html">Nyár</a></li>
+                <li><a href="osz.html">Ősz</a></li>
+                <li><a href="tel.html">Tél</a></li>
+                <li><button onclick="akadaly()">AM</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <a href="#name">Űrlap</a>
+        <form action="mailto:someone@example.com" method="POST">
+            <div class="form-group">
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" maxlength="50" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nem:</label>
+                <div class="options">
+                    <input type="radio" id="female" name="gender" value="female"><label for="female">Nő</label>
+                    <input type="radio" id="male" name="gender" value="male"><label for="male">Férfi</label>
+                    <input type="radio" id="other" name="gender" value="other"><label for="other">Inkább nem adom meg</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label><i><b>Tetszik az oldal?</b></i></label>
+                <div class="options">
+                    <input type="radio" id="yes" name="like" value="yes"><label for="yes">Igen</label>
+                    <input type="radio" id="no" name="like" value="no"><label for="no">Nem</label>
+                    <input type="radio" id="idk" name="like" value="idk"><label for="idk">Nem tudom</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Mely tartalmakat olvasta el?</label>
+                <div class="options">
+                    <input type="checkbox" id="spring" name="season[]" value="spring"><label for="spring">Tavasz</label>
+                    <input type="checkbox" id="summer" name="season[]" value="summer"><label for="summer">Nyár</label>
+                    <input type="checkbox" id="autumn" name="season[]" value="autumn"><label for="autumn">Ősz</label>
+                    <input type="checkbox" id="winter" name="season[]" value="winter"><label for="winter">Tél</label>
+                    <input type="checkbox" id="none" name="season[]" value="none"><label for="none">Egyiket sem</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="opinion">Vélemény:</label>
+                <textarea id="opinion" name="opinion" rows="4" maxlength="400"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="suggestions">Milyen tartalmakat látna még szívesen a honlapon?</label>
+                <textarea id="suggestions" name="suggestions" rows="4" maxlength="500"></textarea>
+            </div>
+
+            <div class="form-actions">
+                <input type="submit" value="Elküld">
+                <input type="reset" value="Alaphelyzet">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Űrlap. Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>

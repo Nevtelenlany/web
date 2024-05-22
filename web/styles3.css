@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('hatter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.content-background {
+    background-color: rgba(119, 136, 153, 0.5);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.navbar {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
+footer p {
+    text-align: center; /* Lábléc szövegének középre igazítása */
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px; /* Táblázatok oldalainak lekerekítése */
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.2em;
+    }
+
+    .navbar li {
+        display: block;
+        text-align: center;
+    }
+}
+
+#aktiv{
+    color: gold;
+}
