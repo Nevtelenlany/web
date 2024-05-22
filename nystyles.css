@@ -80,3 +80,20 @@ a:visited {
 #aktiv{
     color: gold;
 }
+
+@media print {
+    
+    header,footer,video{
+        color: #000;
+        visibility: hidden;
+    }
+    body, .content-background   {
+        color: #000;
+        background-image: none;
+        background-color: white;
+    }
+    
+    .image-gallery>img {
+        width: 250px;
+    }
+}

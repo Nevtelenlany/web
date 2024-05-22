@@ -74,8 +74,6 @@ input[type="submit"], input[type="reset"] {
     }
 }
 
-@media print {
-    body, article, section, p, ul, li, a, nav, header, footer {
-        display: none;
-    }
+#aktiv{
+    color: gold;
 }

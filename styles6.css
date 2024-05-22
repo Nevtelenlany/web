@@ -95,3 +95,7 @@ details summary {
     .gallery {
         flex-direction: column; /* Kis kijelzőkön az elemeket egymás alá rendezi */
     }
+
+    #aktiv{
+        color: gold;
+    }
