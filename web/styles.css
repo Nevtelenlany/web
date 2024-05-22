@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('hatter.png');
+    background-size: cover; /* hogy a kép kitöltse a háttért */
+    color: white; /* Szöveg színe */
+    text-align: center; /* Szöveg középre igazítása */
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; /* Alap betűméret, ami könnyen átméretezhető */
+
+}
+
+.content-background {
+    padding: 20px;
+    margin-left: 15%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+h1, h2 {
+    font-weight: bold;
+    text-align: left;
+}
+
+ul {
+    padding: 0;
+    list-style-type:none;
+}
+
+.navb {
+    list-style-type: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navb li {
+    display: inline-block; /* Váltás blokkról inline-blokkra a középre igazításhoz */
+}
+
+.navb li a {
+    display: block;
+    color: #FFF; /* Linkek alapszíne */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navb li a:visited {
+    color: #DDD; /* Már meglátogatott linkek színe */
+}
+
+.navb li a:hover, .navbar li a:focus {
+    background-color: #111;
+    color: #FFF;
+}
+
+/* Linkek aláhúzása, kivéve a navigációs menüt */
+a{
+    color: rgb(14, 21, 111);
+}
+a:hover{
+    color: #000;
+}
+a:visited {
+    color: rgb(182, 230, 236);
+}
+
+/*@media screen and (max-width: 600px) {
+    .navbar li {
+        display: block; /* Visszaváltás blokkra kisebb kijelzőknél 
+    }
+}*/
+
+.image-gallery img {
+    width: 500px; /* A képek szélessége pontosan 500px lesz */
+    height: auto; /* A magasság automatikusan alkalmazkodik a meghatározott szélességhez */
+}
+
+#aktiv{
+    color: gold;
+}

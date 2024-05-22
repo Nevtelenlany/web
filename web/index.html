@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kezdőlap - Stardew Valley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="nystyles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+            <ul class="navb">
+                <li><a href="index.html" id="aktiv">Kezdőlap</a></li>
+                <li><a href="uralp.html">Űrlap</a></li>
+                <li><a href="tavasz.html">Tavasz</a></li>
+                <li><a href="nyar.html">Nyár</a></li>
+                <li><a href="osz.html">Ősz</a></li>
+                <li><a href="tel.html">Tél</a></li>
+                <li><button onclick="akadaly()">AM</button></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <article class="content-background">
+        <a href="#tipp">Kiemelt tippek és trükkök</a>
+        <h1>Üdvözöl a Stardew Valley rajongói oldal!</h1>
+        <p>Fedezd fel a <b><i>Stardew Valley világát</i></b>, ismerd meg az évszakok szerint változó kihívásokat és kalandokat!</p>
+        <div class="container">
+        <div class="row">
+            <article class="col-lg-6 col-md-12">
+                <h2>Hasznos linkek</h2>
+                <section>
+                <h3>linkek</h3>
+                <ul>
+                    <li><a href="https://www.stardewvalley.net/" target="_blank">Hivatalos Stardew Valley weboldal</a></li>
+                    <li><a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank">Stardew Valley Wiki</a></li>
+                    <li><a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank">Stardew Valley a Steam-en</a></li>
+                </ul>
+            </section>
+            </article>
+            <aside class="col-lg-6 col-md-12">
+                <h3 id="tipp">Kiemelt tippek és trükkök</h3>
+                <ul>
+                    <li><a href="https://hu.maplehorst.com/stardew-valley-beach-farming-guide-tips" target="_blank">Strandgazdálkodás</a></li>
+                    <li><a href="https://sdvhungary.blog.hu/2020/04/24/hogyan_vagjak_bele" target="_blank">Tippek kezdőknek</a></li>
+                    <li><a href="https://hu.gameme.eu/stardew-valley-tippek-hogyan-lehet-gyorsan-penzt-keresni-elkerulni-az-alvast-es-igy-tovabb/" target="_blank">Pénz keresés</a></li>
+                </ul>
+            </aside>
+        </div>
+        </div>
+        <div class="image-gallery">
+            <img src="kep1.jpg" alt="Kép 1" id="current-img">
+        </div>
+    </article>      
+    </main>
+    <footer>
+        <div class="egyeni">
+        <p>&copy; 2024 Stardew Valley Fan Oldal. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+    <script>
+        let currentImageIndex = 0;
+        const images = ["kep1.jpg", "kep2.jpg", "kep3.jpg"]; // A képek elérési útjai
+        const changeImage = () => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById('current-img').src = images[currentImageIndex];
+        };
+        setInterval(changeImage, 5000); // 5 másodpercenként vált
+    </script>
+    
+</body>
+</html>
